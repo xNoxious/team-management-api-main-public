@@ -16,10 +16,11 @@ Other technologies that are part of the application:
 - **Helmet**: adding and configuring some commonly missed server response headers.
 - **Dotenv**: managing server secrets
 - **Nodemon**: automatically restarts app when files change.
-- **Postman**: I have provided a Postman collection that you can use to make request against the API available here: **/src/utils/Team Management API.postman_collection.json** 
+- **Postman**: I have provided a Postman collection that you can use to make request against the API available here: **/src/utils/Team Management API.postman_collection.json**. If you have some issues with the requests, that is probably because you are missing the token, so please add it as part of your headers in the requests to /team endpoints. Its key should be **x-access-token** and value - the token you receive after successful registration and authentication with the registered user.
 
 # Things left to do (time constraint)
 - **Error handling & validation**: I have added basic validation for the sake of showcase, but there are more edge cases to test and there is the need for a global error handler to prevent the application from crashing.
+- **Tests**: I have laid out the structure for unit tests of the team manager and API tests for /authentication and /team endpoints but they are not complete as I have greatly overstayed my welcome for the deadline of the task. 
 - **Extend app for more teams**: Right now, the application has no concept of different teams. It can easily be extended to handle multiple teams.
 - **Tree children**: Currently the tree allows for varying team member sizes. Maybe, if we want a cleaner tree, we can set it up via the constructor but in reality teams are usually of varying size.
 

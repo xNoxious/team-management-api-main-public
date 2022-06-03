@@ -1,0 +1,370 @@
+{
+	"info": {
+		"_postman_id": "f1671454-7d24-4f34-b904-7aff24e0eb5a",
+		"name": "Team Management API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Team",
+			"item": [
+				{
+					"name": "LoadMembersData",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0aW1lIjoiV2VkIEp1biAwMSAyMDIyIDEzOjE1OjQwIEdNVCswMzAwIChFYXN0ZXJuIEV1cm9wZWFuIFN1bW1lciBUaW1lKSIsInVzZXJJZCI6MTIsImlhdCI6MTY1NDA3ODU0MH0.gP2pI3NhRBDVulMSdbKxT9OOOO0P2FAv5vnIfOZjve8",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8000/team/loadMembers/members",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"team",
+								"loadMembers",
+								"members"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ExportMembers",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0aW1lIjoiV2VkIEp1biAwMSAyMDIyIDEzOjE1OjQwIEdNVCswMzAwIChFYXN0ZXJuIEV1cm9wZWFuIFN1bW1lciBUaW1lKSIsInVzZXJJZCI6MTIsImlhdCI6MTY1NDA3ODU0MH0.gP2pI3NhRBDVulMSdbKxT9OOOO0P2FAv5vnIfOZjve8",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8000/team/exportMembersData/members_export",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"team",
+								"exportMembersData",
+								"members_export"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetTeam",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0aW1lIjoiV2VkIEp1biAwMSAyMDIyIDEzOjE1OjQwIEdNVCswMzAwIChFYXN0ZXJuIEV1cm9wZWFuIFN1bW1lciBUaW1lKSIsInVzZXJJZCI6MTIsImlhdCI6MTY1NDA3ODU0MH0.gP2pI3NhRBDVulMSdbKxT9OOOO0P2FAv5vnIfOZjve8",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8000/team",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"team"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "FilterMembers",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0aW1lIjoiV2VkIEp1biAwMSAyMDIyIDEzOjE1OjQwIEdNVCswMzAwIChFYXN0ZXJuIEV1cm9wZWFuIFN1bW1lciBUaW1lKSIsInVzZXJJZCI6MTIsImlhdCI6MTY1NDA3ODU0MH0.gP2pI3NhRBDVulMSdbKxT9OOOO0P2FAv5vnIfOZjve8",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8000/team/filterMembers/email/biz",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"team",
+								"filterMembers",
+								"email",
+								"biz"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "AddMember",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0aW1lIjoiV2VkIEp1biAwMSAyMDIyIDEzOjE1OjQwIEdNVCswMzAwIChFYXN0ZXJuIEV1cm9wZWFuIFN1bW1lciBUaW1lKSIsInVzZXJJZCI6MTIsImlhdCI6MTY1NDA3ODU0MH0.gP2pI3NhRBDVulMSdbKxT9OOOO0P2FAv5vnIfOZjve8",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"hpotter@hogwarts.co.uk\",\r\n    \"name\": \"Harry Potter\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8000/team/addMember",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"team",
+								"addMember"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "MoveMemberWithSubordinates",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0aW1lIjoiV2VkIEp1biAwMSAyMDIyIDEzOjE1OjQwIEdNVCswMzAwIChFYXN0ZXJuIEV1cm9wZWFuIFN1bW1lciBUaW1lKSIsInVzZXJJZCI6MTIsImlhdCI6MTY1NDA3ODU0MH0.gP2pI3NhRBDVulMSdbKxT9OOOO0P2FAv5vnIfOZjve8",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"memberEmail\": \"Ervin.Howell@melissa.tv\",\r\n    \"managerEmail\": \"Clementine.Bauch@yesenia.net\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8000/team/moveMemberWithSubordinates",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"team",
+								"moveMemberWithSubordinates"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "MoveMemberWithoutSubordinates Copy",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0aW1lIjoiV2VkIEp1biAwMSAyMDIyIDEzOjE1OjQwIEdNVCswMzAwIChFYXN0ZXJuIEV1cm9wZWFuIFN1bW1lciBUaW1lKSIsInVzZXJJZCI6MTIsImlhdCI6MTY1NDA3ODU0MH0.gP2pI3NhRBDVulMSdbKxT9OOOO0P2FAv5vnIfOZjve8",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"memberEmail\": \"Ervin.Howell@melissa.tv\",\r\n    \"managerEmail\": \"Clementine.Bauch@yesenia.net\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8000/team/moveMemberWithoutSubordinates",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"team",
+								"moveMemberWithoutSubordinates"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "RemoveMember",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0aW1lIjoiV2VkIEp1biAwMSAyMDIyIDEzOjE1OjQwIEdNVCswMzAwIChFYXN0ZXJuIEV1cm9wZWFuIFN1bW1lciBUaW1lKSIsInVzZXJJZCI6MTIsImlhdCI6MTY1NDA3ODU0MH0.gP2pI3NhRBDVulMSdbKxT9OOOO0P2FAv5vnIfOZjve8",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"hpotter@hogwarts.co.uk\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8000/team/removeMember",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"team",
+								"removeMember"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Authentication",
+			"item": [
+				{
+					"name": "Register",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Harry Potter\",\r\n    \"email\": \"h.potter@hogwarts.co.uk\",\r\n    \"password\": \"NeitherCanLiveWhileTheOtherSurvives\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8000/authentication/register",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"authentication",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Authenticate",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"h.potter@hogwarts.co.uk\",\r\n    \"password\": \"NeitherCanLiveWhileTheOtherSurvives\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8000/authentication/authenticate",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"authentication",
+								"authenticate"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Heartbeat",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/heartbeat",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"heartbeat"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

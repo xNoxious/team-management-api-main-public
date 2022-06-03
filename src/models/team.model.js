@@ -53,7 +53,6 @@ function loadTeamStructure(data) {
         team.insertNodeBFS(data[i]);
     }
 
-    helper.PrintTree(team.root);
     return team;
 }
 
